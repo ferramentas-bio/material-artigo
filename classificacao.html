@@ -1,42 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bioinformatic Tools by LABIO@PUCRS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Bioinformatic Tools</h1>
+      <h2 class="project-tagline">Lista de ferramentas utilizadas no ensino de Bioinformática</h2>
+    </section>
 
-| ID  | Ferramenta                                                                     | Referência                                                             | Categorias                         |
-|     |                                                                                |                                                                        | TUT        | PRG | INT | APP | SIM |
-|-----|--------------------------------------------------------------------------------|------------------------------------------------------------------------|------------|-----|-----|-----|-----|
-| F01 | NCBI                                                                           |                                                                        |            |     | X   |     |     |
-| F02 | GenBank                                                                        | (Benson et al., 2015)                                                  |            |     | X   |     |     |
-| F03 | PDB - The Protein Data Bank                                                    | (Berman, 2000; Rose et al., 2015)                                      |            |     | X   |     |     |
-| F04 | PDB-101                                                                        | (Berman, 2000)                                                         | X          |     |     |     |     |
-| F05 | CATH (Class, Architecture, Topology, Homology)                                 | (Sillitoe et al., 2015)                                                |            |     | X   |     |     |
-| F06 | SCOP - Structural Classification of Proteins                                   | (Murzin et al., 1995)                                                  |            |     | X   |     |     |
-| F07 | DDBJ - DNA DataBank of Japan                                                   | (Mashima et al., 2016)                                                 |            |     | X   |     |     |
-| F08 | GOLD - Genomes Online Database                                                 | (Reddy et al., 2014)                                                   |            |     | X   |     |     |
-| F09 | EMBL-EBI Services                                                              | (Alcantara et al., 2013)                                               |            |     | X   |     |     |
-| F10 | PIR - Protein Information Resource                                             | (Barker et al., 2000)                                                  |            |     | X   |     |     |
-| F11 | UniProt - Universal Protein Resource                                           | (Bairoch et al., 2005; “UniProt: a hub for protein information,” 2016) |            |     | X   |     |     |
-| F12 | KEGG (Kyoto Encyclopedia of Genes and Genomes)                                 | (Kanehisa, Minoru et al., 2016)                                        |            |     | X   |     |     |
-| F13 | Swiss PDB Viewer                                                               | (Guex, 1996)                                                           |            |     |     | X   | X   |
-| F14 | VMD - Visual Molecular Dynamics                                                | (Humphrey et al., 1996)                                                |            |     |     | X   | X   |
-| F15 | PyMOL Molecular Graphics System                                                | (Schrödinger, LLC, 2010)                                               |            | X   |     |     | X   |
-| F16 | Rasmol                                                                         | (Sayle and Milner-White, 1995)                                         |            |     |     | X   |     |
-| F17 | Chimera                                                                        | (Pettersen et al., 2004)                                               |            |     |     | X   |     |
-| F18 | Chime - Plugin                                                                 |                                                                        |            |     |     | X   |     |
-| F19 | Cn3D macromolecular structure viewer                                           | (Hogue, 1997)                                                          |            |     |     | X   |     |
-| F20 | Polyview-3D                                                                    | (Porollo and Meller, 2007)                                             |            |     |     | X   |     |
-| F21 | BLAST (Basic Local Alignment Search Tool)                                      | (Johnson et al., 2008)                                                 |            |     |     | X   |     |
-| F22 | Clustal W                                                                      | (Larkin et al., 2007)                                                  |            |     |     | X   |     |
-| F23 | Clustal X                                                                      | (Larkin et al., 2007)                                                  |            |     |     | X   |     |
-| F24 | Clustal W - Embl/EBI Server                                                    | (Larkin et al., 2007)                                                  |            |     |     | X   |     |
-| F25 | Mega                                                                           | (Kumar et al., 1994)                                                   |            |     |     | X   |     |
-| F26 | ProSite Scan                                                                   | (de Castro et al., 2006)                                               |            |     |     | X   |     |
-| F27 | MUSCLE                                                                         | (Edgar, 2004)                                                          |            |     |     | X   |     |
-| F28 | FastA                                                                          | (McWilliam et al., 2013)                                               |            |     |     | X   |     |
-| F29 | T-Coffee - Tree based Consistency Objective Function For AlignmEnt Evaluation. | (Chang et al., 2014)                                                   |            |     |     | X   |     |
-| F30 | JPred                                                                          | (Drozdetskiy et al., 2015)                                             |            |     |     |     | X   |
-| F31 | PSIPred                                                                        | (Buchan et al., 2013)                                                  |            |     |     |     | X   |
-| F32 | MODELLER                                                                       | (Fiser and Šali, 2003)                                                 |            |     |     |     | X   |
-| F33 | Swiss-Model                                                                    | (Guex and Peitsch, 1997)                                               |            |     |     |     | X   |
-| F34 | BIOTECH                                                                        | ---                                                                    |            |     |     | X   |     |
-| F35 | PROCHECK                                                                       | (Laskowski et al., 1993)                                               |            |     |     | X   |     |
-| F36 | WHATCHECK                                                                      | (Hooft et al., 1996)                                                   |            |     |     | X   |     |
-| F37 | PROVE                                                                          | (Pontius et al., 1996)                                                 |            |     |     | X   |     |
-| F38 | Verify 3D                                                                      | (Eisenberg et al., 1997)                                               |            |     |     | X   |     |
+    <section class="main-content">
+ <table>
+  <tr>
+    <th>ID</th>
+    <th>Ferramenta</th>
+    <th>Referência</th>
+    <th colspan="5">Categorias</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TUT</td>
+    <td>PRG</td>
+    <td>INT</td>
+    <td>APP</td>
+    <td>SIM</td>
+  </tr>
+  <tr>
+    <td>F01</td>
+    <td>NCBI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F02</td>
+    <td>GenBank</td>
+    <td>(Benson et al., 2015)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F03</td>
+    <td>PDB - The Protein Data Bank</td>
+    <td>(Berman, 2000; Rose et al., 2015)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F04</td>
+    <td>PDB-101</td>
+    <td>(Berman, 2000)</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F05</td>
+    <td>CATH (Class, Architecture, Topology, Homology)</td>
+    <td>(Sillitoe et al., 2015)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F06</td>
+    <td>SCOP - Structural Classification of Proteins</td>
+    <td>(Murzin et al., 1995)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F07</td>
+    <td>DDBJ - DNA DataBank of Japan</td>
+    <td>(Mashima et al., 2016)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F08</td>
+    <td>GOLD - Genomes Online Database</td>
+    <td>(Reddy et al., 2014)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F09</td>
+    <td>EMBL-EBI Services</td>
+    <td>(Alcantara et al., 2013)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F10</td>
+    <td>PIR - Protein Information Resource</td>
+    <td>(Barker et al., 2000)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F11</td>
+    <td>UniProt - Universal Protein Resource</td>
+    <td>(Bairoch et al., 2005; “UniProt: a hub for protein information,” 2016)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F12</td>
+    <td>KEGG (Kyoto Encyclopedia of Genes and Genomes)</td>
+    <td>(Kanehisa, Minoru et al., 2016)</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F13</td>
+    <td>Swiss PDB Viewer</td>
+    <td>(Guex, 1996)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F14</td>
+    <td>VMD - Visual Molecular Dynamics</td>
+    <td>(Humphrey et al., 1996)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F15</td>
+    <td>PyMOL Molecular Graphics System</td>
+    <td>(Schrödinger, LLC, 2010)</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F16</td>
+    <td>Rasmol</td>
+    <td>(Sayle and Milner-White, 1995)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F17</td>
+    <td>Chimera</td>
+    <td>(Pettersen et al., 2004)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F18</td>
+    <td>Chime - Plugin</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F19</td>
+    <td>Cn3D macromolecular structure viewer</td>
+    <td>(Hogue, 1997)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F20</td>
+    <td>Polyview-3D</td>
+    <td>(Porollo and Meller, 2007)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F21</td>
+    <td>BLAST (Basic Local Alignment Search Tool)</td>
+    <td>(Johnson et al., 2008)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F22</td>
+    <td>Clustal W</td>
+    <td>(Larkin et al., 2007)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F23</td>
+    <td>Clustal X</td>
+    <td>(Larkin et al., 2007)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F24</td>
+    <td>Clustal W - Embl/EBI Server</td>
+    <td>(Larkin et al., 2007)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F25</td>
+    <td>Mega</td>
+    <td>(Kumar et al., 1994)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F26</td>
+    <td>ProSite Scan</td>
+    <td>(de Castro et al., 2006)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F27</td>
+    <td>MUSCLE</td>
+    <td>(Edgar, 2004)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F28</td>
+    <td>FastA</td>
+    <td>(McWilliam et al., 2013)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F29</td>
+    <td>T-Coffee - Tree based Consistency Objective Function For AlignmEnt Evaluation.</td>
+    <td>(Chang et al., 2014)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F30</td>
+    <td>JPred</td>
+    <td>(Drozdetskiy et al., 2015)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F31</td>
+    <td>PSIPred</td>
+    <td>(Buchan et al., 2013)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F32</td>
+    <td>MODELLER</td>
+    <td>(Fiser and Šali, 2003)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F33</td>
+    <td>Swiss-Model</td>
+    <td>(Guex and Peitsch, 1997)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>F34</td>
+    <td>BIOTECH</td>
+    <td>---</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F35</td>
+    <td>PROCHECK</td>
+    <td>(Laskowski et al., 1993)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F36</td>
+    <td>WHATCHECK</td>
+    <td>(Hooft et al., 1996)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F37</td>
+    <td>PROVE</td>
+    <td>(Pontius et al., 1996)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>F38</td>
+    <td>Verify 3D</td>
+    <td>(Eisenberg et al., 1997)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+</table>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/labio-pucrs/bioinformatic_tools">Bioinformatic Tools</a> is maintained by <a href="https://github.com/labio-pucrs">labio-pucrs</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
